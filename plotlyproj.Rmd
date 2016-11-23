@@ -1,0 +1,17 @@
+---
+title: "plotly project"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(plotly)
+library(scatterplot3d)
+plot_ly(mtcars, x=~mpg, y =~wt,z=~drat, mode="markers", type="scatter3d")
+```
+
